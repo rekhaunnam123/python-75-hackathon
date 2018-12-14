@@ -1,0 +1,16 @@
+GARBAGE COLLECTION:
+  
+      A module represents python code that perform specific task.Garbage collector is a module in python that is useful to delete objects
+      from memory which are not used in the program or maintains count for each object.When an object is referenced twice,its reference 
+      count will be 2.When an object has some count and if it is being used in he program and hence garbage collector will not remove it 
+      from memory.When an object is found with a reference count 0,the object is not used by the program and hence it can be deleted from  
+      memory.
+
+FROZEN BINARIES:
+   
+     When a  software is developed in python,there are two ways to provide the software to the end of user.The first way is to provide the. 
+     pyc files to the user.The user will install PVM in his computer and run the byte code instructions of the .pyc files.
+  
+    The other way is to provide the .pyc files,PVM along with necessary python library and PVM will be converted into a single executable
+    file,so that the user can directly execute that file by double clicking on it.This way of converting the python programs into true 
+    executables is called frozen binaries.  
