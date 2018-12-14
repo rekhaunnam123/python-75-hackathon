@@ -1,0 +1,22 @@
+from abc import ABC,abstractmethod
+class abstract1(ABC):
+    def __init__(self,value):
+        self.value=value
+
+    @abstractmethod
+    def eat(self):
+        pass
+
+class sub1(abstract1):
+    def eat(self):
+        print("eat solid food" ,self.value, "times each day")
+
+class sub2(abstract1):
+    def eat(self):
+        print("milk only" ,self.value, "times or more each day")
+
+a1=sub1(3)
+print(a1.eat())
+
+a2=sub2(6)
+print(a2.eat())
