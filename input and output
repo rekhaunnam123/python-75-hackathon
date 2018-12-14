@@ -1,0 +1,8 @@
+#Input Example
+roll = int(input('Enter the Student Roll.No.'))
+name = input('Enter Student name:')
+
+
+#Output Example
+print('Student name is %s and Roll.No is %d'%(name,roll))
+print("city="+"chennai")
