@@ -1,0 +1,7 @@
+import numpy as np
+
+lst = [int(i) for i in input().split()]
+res = np.array(lst)
+
+result = np.reshape(res, (3,3))
+print(result)
