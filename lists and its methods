@@ -1,0 +1,18 @@
+#two lsts are added by deafult values
+x=[80,90,100]
+y=[12,13,14]
+z=[]
+for i in range(len(x)):
+    z.append(x[i]+y[i])
+print("sum is:",z)
+
+#two lsts are added using iputs from keyboard
+a=[int(i) for i in input("enter  no.s").split()]
+print(a)
+b=[int(i) for i in input("enter no.s").split()]
+print(b)
+c=[]
+for i in range(len(a)):
+    c.append(a[i]+b[i])
+
+print("final sum is:",c)
