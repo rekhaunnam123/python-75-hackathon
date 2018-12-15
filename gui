@@ -1,0 +1,51 @@
+from tkinter import *
+from tkinter import messagebox
+import _tkinter
+window = Tk()
+window.geometry("700x500")
+def interest_calc():
+    try:
+        roi = interest_var.get()
+        principal = principal_var.get()
+        term = term_var.get()
+        si = (roi*principal*term)/100
+        amount_payable = principal + si
+        si_output.config(text="After %.2f years,your investment \n will be worth %.4f " % (
+            term, amount_payable))
+    except _tkinter.TclError as tkerror:
+        messagebox.showerror('Input Error', 'Please input a valid value')
+        si_output.config(text="")
+
+
+def reset():
+    interest_entry.delete(0, 'end')
+    principal_entry.delete(0, 'end')
+    term_entry.delete(0, 'end')
+    si_output.config(text="")
+interest_label = Label(window, text='RATE OF\n INTEREST',
+                       pady=20, font=("Roboto", 13, 'bold'))
+interest_var = DoubleVar()
+interest_label.grid(row=0, column=0)
+interest_entry = Entry(window, textvariable=interest_var)
+interest_entry.grid(row=0, column=1)
+principal_label = Label(window, text='PRINCIPAL',
+                        pady=20, font=("Roboto", 13, 'bold'))
+principal_var = DoubleVar()
+principal_label.grid(row=1, column=0)
+principal_entry = Entry(window, textvariable=principal_var)
+principal_entry.grid(row=1, column=1)
+term_label = Label(window, text="TERM", pady=20, font=("Roboto", 13, 'bold'))
+term_var = DoubleVar()
+term_label.grid(row=2, column=0)
+term_entry = Entry(window, textvariable=term_var)
+term_entry.grid(row=2, column=1)
+si_output = Label(window, font=("Roboto", 10, 'bold'))
+si_output.grid(row=3, column=1)
+calc_btn = Button(window, pady=5, text='CALCULATE', command=interest_calc)
+calc_btn.grid(row=4, column=1)
+reset_btn = Button(window, pady=5, text='RESET', command=reset)
+reset_btn.grid(row=4, column=2)
+interest_entry.delete(0, 'end')
+principal_entry.delete(0, 'end')
+term_entry.delete(0, 'end')
+window.mainloop()
