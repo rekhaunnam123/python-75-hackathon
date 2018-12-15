@@ -1,0 +1,15 @@
+#about DATE AND TIME:
+
+#epoch
+import time
+t=time.time()
+print('epoch=',t)
+dt=time.ctime(t)
+print(dt)
+print('\n')
+import datetime
+dt=datetime.datetime.now()
+print(dt)
+print('\n')
+dt=datetime.datetime.today()
+print(dt)
