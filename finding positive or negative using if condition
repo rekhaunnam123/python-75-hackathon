@@ -1,0 +1,20 @@
+# giving value through keyboard
+
+n=int(input('enter a num'))
+if(n>0):
+    print(n,'is positive')
+elif(n<0):
+    print(n,'is negative')
+
+else:
+    print(n,'is zero')
+
+#giving values directly
+
+n=5
+if(n>0):
+    print(n,'is positive')
+elif(n<0):
+    print(n,'is negative')
+else:
+    print(n,'is zero')
