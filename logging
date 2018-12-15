@@ -1,0 +1,8 @@
+import logging
+
+logging.basicConfig(filename="mylog.txt",level=logging.ERROR)
+logging.error("there is an error in the program")
+logging.critical("there is a problem in the design")
+logging.warning("project is going slow")
+logging.info("junior programming")
+logging.debug("contains syntax error")
