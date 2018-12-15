@@ -1,0 +1,16 @@
+#User-Defined Exception Handling
+class MyException(Exception):
+    def __init__(self, stri):
+        self.str = stri
+def check(bank):
+    for k, v in bank.items():
+        print(k, v)
+        if v<2000.00:
+            raise MyException('Balence amount is low')
+bank = {'rekha' : 12000.00, 'tarun' : 12000.00, 'amrutha' : 12000.00, 'shanmukha' : 12000.00, 'raju' : 1999.99}
+
+try:
+    check(bank)
+
+except MyException as e:
+    print(e)
