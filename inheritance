@@ -1,0 +1,9 @@
+class traingle(polygon):
+    def __init__(self):
+        polygon.__init__(self,3)
+
+    def findarea(self):
+        a,b,c=self.sides
+        s=(a+b+c)/2
+        area=(s*(s-a)*(s-b)*(s-c))**0.5
+        print("area of traingle",area)
