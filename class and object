@@ -1,0 +1,18 @@
+#Class and object
+
+class Person(object):
+    def __init__(self):
+        self.name = 'vishnu'
+        self.age = 20
+        self.sex = 'M'
+
+    def talk(self):
+        print("Hi, I'm ", self.name)
+        print('My age is ',self.age)
+
+p1 = Person()
+p1.talk()
+
+print(p1.name)
+print(p1.age)
+print(p1.sex)
