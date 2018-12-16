@@ -1,0 +1,17 @@
+#python code to demonstrate Type
+#using ord(),hex(),oct()
+#initialising integer
+
+s='4'
+#printing character converting to integer
+c=ord(s)
+print("after converting character to integer:",end=" ")
+print(c)
+#printing integer converting to hexadecimal
+c=hex(56)
+print("after converting 56 to the hexadecimal string:",end=" ")
+print(c)
+#printing integer converting to octal string
+c=oct(56)
+print("after converting 56 tooctal string:",end=" ")
+print(c)
