@@ -1,0 +1,13 @@
+# add two numbers using interface i.e abstract class
+from abc import *
+
+class Myclass(ABC):
+    @abstractmethod
+    def add(self, a, b):
+        pass
+class A(Myclass):
+    def add(self, a, b):
+        print(a+b)
+o1 =A()
+o1.add(2, 5)
+
