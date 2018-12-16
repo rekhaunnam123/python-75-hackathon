@@ -1,0 +1,10 @@
+#Range Function
+
+r=range(5)
+
+#printing using index
+print(r[0])
+
+#printing all the elements
+for i in r:
+    print(i) 
