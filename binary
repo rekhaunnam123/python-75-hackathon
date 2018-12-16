@@ -1,0 +1,6 @@
+n, m =[int(i) for i in input().split()]
+bin_n, bin_m = format(n,'#b'), format(m, '#b')
+print(bin_n, bin_m)
+n, m = int(bin_m, 2), int(bin_m, 2)
+l_shift = n << m
+r_shift  = n >> m
