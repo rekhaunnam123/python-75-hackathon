@@ -1,0 +1,17 @@
+books={"bigdata":5,"haddop":6,"data science":4}
+print(books.values())
+print("original items",books)
+del[books['bigdata']]
+print("updated items",books)
+print(books.values())
+
+
+#length
+fruits={"mango":2,"orange":6}
+print("length:",len(fruits))
+
+#update
+d={1:"one",2:"three"}
+d1={2:"two"}
+d.update(d1)
+print(d)
