@@ -1,0 +1,17 @@
+#intersection of sets:
+x={'a','e','i','o','u'}
+y={'c','d','e','f','g'}
+print(x.intersection(y))
+print(x&y)
+
+#union of sets:
+x=set(['bigdata','datascience'])
+y=set(['datascience','spark'])
+a=x|y
+print(a)
+
+#difference of sets
+a={'a','b','c','d'}
+b={'c','f','g'}
+print(a-b)
+print(b-a)
