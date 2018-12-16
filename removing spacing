@@ -1,0 +1,7 @@
+name=" rekha unnam "
+#to cut off left space
+name.lstrip()
+#to cut right strip
+name.rstrip()
+#to find location
+print(name.find('k'))
