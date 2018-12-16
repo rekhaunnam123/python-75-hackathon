@@ -1,0 +1,17 @@
+def f():
+    print(s)
+
+# Global scope
+s = "I love my country"
+f()
+
+
+def f():
+    s = "Me too."
+    print(s)
+
+
+# Global scope
+s = "hello world"
+f()
+print(s)
