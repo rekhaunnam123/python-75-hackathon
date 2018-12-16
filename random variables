@@ -1,0 +1,8 @@
+#Random Float values
+import random
+
+for x in range(10):
+    print(random.random())
+
+#Random Integers
+    print(random.randint(1,101))
