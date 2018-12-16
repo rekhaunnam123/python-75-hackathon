@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+x=[1001,1002,1003,1004,1005]
+y=[1000,2000,30000,40000,50000]
+
+x1=[1010,1011,1012,1013,1014]
+y1=[5000,4000,8000,6000,7000]
+
+plt.bar(x,y,label="developer",color="red")
+plt.bar(x1,y1,label="testing",color="black")
+
+plt.xlabel("empid")
+plt.ylabel("empsal")
+plt.title("sathyabama startup")
+plt.legend()
+plt.show()
